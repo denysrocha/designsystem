@@ -5,10 +5,12 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "build-docs": "node build-docs.js"
   },
   "dependencies": {
     "core-js": "^3.6.4",
+    "glob": "^7.1.6",
     "vue": "^2.6.11"
   },
   "devDependencies": {

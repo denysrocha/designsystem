@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ButtonPrimary from './atomos/botao/ButtonPrimary.vue'
+import ButtonPrimary from './design-system/atomos/botao/ButtonPrimary.vue'
 
 export default {
   name: 'App',
