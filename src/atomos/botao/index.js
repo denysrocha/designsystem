@@ -1,5 +1,5 @@
 import Vue from "vue";
-import App from "./Button";
+import App from "./ButtonPrimary";
 
 Vue.config.productionTip = false;
 

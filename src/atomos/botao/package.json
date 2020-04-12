@@ -1,5 +1,5 @@
 {
-  "name": "Design System - Button Example",
+  "name": "Design System",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -17,5 +17,5 @@
     "not ie <= 8"
   ],
   "keywords": [],
-  "description": "Button.vue single-file components example using a .vue extension."
+  "description": "Item do Design System"
 }
