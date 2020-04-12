@@ -49,7 +49,7 @@ glob(`${testFolder}/**/*.vue`, function (er, files) {
                     "description": "Item do Design System"
                   }
                   `,
-                    'index.js': `import Vue from "vue";import App from "../${component.replace('.vue', '')}";Vue.config.productionTip = false;new Vue({el: "#app",template: "<App/>",components: { App }});`
+                    'index.js': `import Vue from "vue";import App from "./${component.replace('.vue', '')}";Vue.config.productionTip = false;new Vue({el: "#app",template: "<App/>",components: { App }});`
                 }
 
                 // creating files
