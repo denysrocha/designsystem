@@ -13,7 +13,7 @@ glob(`${testFolder}/**/*.vue`, function (er, files) {
         const splitedPath = file.split('/')
         const component = splitedPath.pop()
         const componentPath = splitedPath.join('/').replace('./src/','')
-        const samplePath = `./exemplos/${componentPath}`
+        const samplePath = `./exemplos/${componentPath}/${component.replace('.vue','')}`
 
         console.info(`### Creating sample for ${component} ###`)
         fs.rmdir(samplePath, { recursive: true }, (err) => {
