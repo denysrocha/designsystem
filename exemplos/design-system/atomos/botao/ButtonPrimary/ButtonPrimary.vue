@@ -19,7 +19,7 @@ export default {
 </script>
 <style>
 .wrapper {
-  height: 97vh;
+  height: 95vh;
   min-height: 100%;
   display: -webkit-flex;
   display: flex;
