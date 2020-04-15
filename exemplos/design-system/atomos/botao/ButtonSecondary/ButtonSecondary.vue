@@ -1,6 +1,6 @@
 <template>
   <div class="wrapper">
-    <button class="button-primary" v-on:click="onClick">Button Primary {{counter}}</button>
+    <button class="button-secondary" v-on:click="onClick">Button Secondary {{counter}}</button>
   </div>
 </template>
 <script>
@@ -28,16 +28,16 @@ export default {
   -webkit-justify-content: center;
   justify-content: center;
 }
-.button-primary {
-  color: #FFFFFF;
-  background: #2980b9;
+.button-secondary {
+  color: #2c3e50;
+  background: #95a5a6;
   padding: 8px 12px;
   border-radius: 4px;
   border: none;
   font-weight: 500;
 }
 .button-primary:hover {
-  background: #3498db;
+  background: #7f8c8d;
 }
 </style>
 

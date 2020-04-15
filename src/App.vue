@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <button-primary />
+    <button-secondary />
   </div>
 </template>
 
 <script>
-import ButtonPrimary from './design-system/atomos/botao/ButtonPrimary.vue'
+import ButtonSecondary from './design-system/atomos/botao/ButtonSecondary.vue'
 
 export default {
   name: 'App',
   components: {
-    ButtonPrimary
+    ButtonSecondary
   }
 }
 </script>
