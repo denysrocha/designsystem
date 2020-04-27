@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <!-- <button-secondary /> -->
+    <wrapper />
+    <button-secondary />
     <headline-1 />
     <headline-2 />
     <headline-3 />
@@ -17,7 +18,8 @@
 </template>
 
 <script>
-// import ButtonSecondary from './design-system/atomos/botao/ButtonSecondary.vue'
+import Wrapper from '../exemplos/design-system/atomos/botao/ButtonSecondary/Wrapper.vue'
+import ButtonSecondary from '../exemplos/design-system/atomos/botao/ButtonSecondary/ButtonSecondary.vue'
 import Headline1 from './design-system/atomos/estilosTexto/cabecalhos/Headline1.vue'
 import Headline2 from './design-system/atomos/estilosTexto/cabecalhos/Headline2.vue'
 import Headline3 from './design-system/atomos/estilosTexto/cabecalhos/Headline3.vue'
@@ -34,7 +36,8 @@ import TextCaption from './design-system/atomos/estilosTexto/corpo/Caption.vue'
 export default {
   name: 'App',
   components: {
-    // ButtonSecondary,
+    Wrapper,
+    ButtonSecondary,
     Headline1,
     Headline2,
     Headline3,

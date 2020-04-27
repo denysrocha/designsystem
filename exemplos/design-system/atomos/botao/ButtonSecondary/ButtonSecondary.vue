@@ -1,7 +1,5 @@
 <template>
-  <div class="wrapper">
-    <button class="button-secondary" v-on:click="onClick">Button Secondary {{counter}}</button>
-  </div>
+  <button class="button-secondary" v-on:click="onClick">Button Secondary {{counter}}</button>
 </template>
 <script>
 export default {
@@ -18,16 +16,6 @@ export default {
 };
 </script>
 <style>
-.wrapper {
-  height: 95vh;
-  min-height: 100%;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-align-items: center;
-  align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
 .button-secondary {
   color: #2c3e50;
   background: #95a5a6;

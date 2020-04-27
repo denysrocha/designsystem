@@ -25,31 +25,65 @@ glob(`${testFolder}/**/*.vue`, function (er, files) {
                   });
 
                 const data = {
+                    'Wrapper.vue' : `<template>
+    <div class="wrapper">
+        <generic-component />
+    </div>
+</template>
+<script>
+import GenericComponent from './${component}'
+export default {
+    components: {
+        GenericComponent
+    }
+}
+</script>
+<style>
+.wrapper {
+  height: 95vh;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+</style>
+                
+                `,
                     'readme.md': 'This folders were created automatically',
                     'index.html': '<div id="app"></div>',
                     'package.json': `{
-                    "name": "Design System",
-                    "version": "0.1.0",
-                    "private": true,
-                    "scripts": {
-                      "serve": "vue-cli-service serve",
-                      "build": "vue-cli-service build",
-                      "lint": "vue-cli-service lint"
-                    },
-                    "dependencies": {
-                      "vue": "^2.6.11"
-                    },
-                    "devDependencies": {},
-                    "browserslist": [
-                      "> 1%",
-                      "last 2 versions",
-                      "not ie <= 8"
-                    ],
-                    "keywords": [],
-                    "description": "Item do Design System"
-                  }
-                  `,
-                    'index.js': `import Vue from "vue";import App from "./${component.replace('.vue', '')}";Vue.config.productionTip = false;new Vue({el: "#app",template: "<App/>",components: { App }});`
+  "name": "Design System",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "keywords": [],
+  "description": "Item do Design System"
+}
+                 `,
+                    'index.js': `import Vue from "vue";
+import App from "./Wrapper.vue";
+Vue.config.productionTip = false;
+new Vue({
+  el: "#app",
+  template: "<App/>",
+  components: { App }
+});`
                 }
 
                 // creating files
